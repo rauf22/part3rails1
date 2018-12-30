@@ -1,0 +1,49 @@
+<header>
+	<div class="center-block-main">
+    	<div class="header-top clearfix">
+        	<p class="logo">BIRUANG</p>
+            <div class="contakt-basket">
+                <% unless current_user %>
+                    <p class="sotials">
+                        Login with:
+                        <%= link_to image_tag(image_path('facebook-icon.png')), user_facebook_omniauth_authorize_path %>
+                    </p>
+                <% else %>
+                  <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+                <% end %>
+
+                <p class="header-phone">
+                    <%= image_tag(image_path('ico-phone.jpg')) %> +371 282 20 760
+                </p>
+                <p class="header-basket">
+                    <%= image_tag(image_path('ico-basket.jpg')) %>  
+                    <%-  if @cart.present? %>
+                        <%= number_to_currency(@cart.total_price) %>
+                    <% end %> 
+                    <%= link_to "Checkout", @cart, class: "btn btn-info" %>
+                    
+
+                </p>
+            </div>
+        </div>
+        <div class="header-bottom clearfix">
+        	<nav>
+            	<ul class="menu">
+                	<li><a href="">Home</a></li>
+                    <li><a href="">MEN</a></li>
+                    <li><a href="">WOMEN</a></li>
+                    <li><a href="">KIDS</a></li>
+                    <li><a href="">SALE</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">SUPPORT</a></li>
+                </ul>
+            </nav>
+            <div class="search-block">
+            	<form action="" method="get">
+                    <input class="search-btn" type="image" <%= image_tag(image_path('search-btn.jpg')) %>
+                    <input type="search" class="search" placeholder="Search...">
+                </form>
+            </div>
+        </div>
+    </div>
+</header>

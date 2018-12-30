@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Part3rails2</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link rel="stylesheet" href="unslider.css">
+    <link rel="stylesheet" href="unslider-dots.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed' rel='stylesheet' type='text/css'>
+
+  </head>
+
+  <body>
+    <%= render 'shared/header' %>
+      <%= yield %>
+    <%= render 'shared/footer' %>
+  </body>
+</html>

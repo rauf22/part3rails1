@@ -1,0 +1,107 @@
+<div class="my-slider center-block-main">
+	<ul>
+        <li>
+            <h2>RIGHT IS PINK. <br>LEFT IS BLUE</h2>
+            <p>Inspired by Brasil’s bold colors and matching up to football’s on-pitch<br>
+            playmakers, these kicks are ready to stand out.</p>
+            <%= image_tag(image_path('slide1.jpg')) %>
+        </li>
+
+		<li>
+        	<h2>RIGHT IS PINK. <br>LEFT IS BLUE</h2>
+            <p>Inspired by Brasil’s bold colors and matching up to football’s on-pitch<br>
+			playmakers, these kicks are ready to stand out.</p>
+
+            <%= image_tag(image_path('slide2.jpg') )%>
+        </li>
+        <li>
+        	<h2>RIGHT IS PINK. <br>LEFT IS BLUE</h2>
+            <p>Inspired by Brasil’s bold colors and matching up to football’s on-pitch<br>
+			playmakers, these kicks are ready to stand out.</p>
+
+            <%= image_tag(image_path('slide3.jpg') )%>
+        </li>
+	</ul>
+</div>
+
+<div class="block3-main center-block-main clearfix">
+	<article>
+		<%= image_tag(image_path('img31.jpg') )%>
+        <h2><a href="#">FOOTBALL SHOES</a></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing,
+vivamus congue nulla leo, quis imperdiet magna.</p>
+    </article>
+    <article>
+    	<%= image_tag(image_path('img32.jpg') )%>
+        <h2><a href="#">MODERN CLOTHES</a></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing,
+vivamus congue nulla leo, quis imperdiet magna.</p>
+    </article>
+    <article>
+    	<%= image_tag(image_path('img33.jpg') )%>
+        <h2><a href="rafik">BAGS & ACCESSORIES</a></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing,
+vivamus congue nulla leo, quis imperdiet magna.</p>
+    </article>
+</div>
+
+<section class="block4-section center-block-main">
+	<h2>POPULAR PRODUCTS</h2>
+    <div class="block4-main clearfix">
+    	<% @products.each do |i| %>
+
+		    	<article>
+		    		<%= image_tag(i.image.url) %>
+
+		            <div class="block4-main-content">
+		            	<h2><%= i.title %></h2>
+		                <h3>Running Tank Top</h3>
+		                <p><%= i.descption %></p>
+
+						<p class="price-basket clearfix">
+		                	<span class="price"><%= number_to_currency(i.price) %> </span>
+		                    <span class="basket-btn"><%= link_to image_tag(image_path('ico-plus.jpg')), add_to_cart_product_path(i)   %></span>
+		                </p>
+		            </div>
+		        </article>
+			<% end %>
+        
+    </div>
+</section>
+
+<div class="about center-block-main clearfix">
+	<article>
+    	<h2>About</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum lectus sit amet varius pulvinar. Proin vitae 
+dui tincidunt nibh facilisis pellentesque.  Fusce tortor turpis, facilisis ut condimentum eu, sagittis at est.</p>
+
+<p>Praesent egestas posuere urna a egestas. Maecenas facilisis orci vitae ante  tempor accumsan. Aenean aliquam 
+justo ac sagittis vehicula. Nam mattis pretium odio sit amet vulputate.</p>
+
+<p>Quisque non lobortis orci. Morbi augue mauris, ultrices at fermentum ac, consequat vitae magna. Pellentesque 
+non cursus mi, eu cursus nunc. Nullam  et odio tristique, volutpat urna vitae, dignissim orci. Fusce eu nulla urna.
+This template was created by Erik Padamans.</p>
+
+<p>Praesent egestas posuere urna a egestas. Maecenas facilisis orci vitae ante  tempor accumsan. Aenean aliquam 
+justo ac sagittis vehicula. Nam mattis pretium odio sit amet vulputate.</p>
+ 
+    </article>
+    <div class="map">
+    	<div class="mapin">
+    		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2795.8964773381153!2d27.56055224704729!3d53.895148625930446!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x0903c79016f027b8!2z0KHRgtCw0LTQuNC-0L0g0JTQuNC90LDQvNC-!5e0!3m2!1sru!2sby!4v1454671639607" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<div class="subscribe">
+	<div class="center-block-main clearfix">
+    	<h2><strong>Sign up</strong> for exclusive sales and product news</h2>
+        
+        <div class="subscribe-form">
+        	<form action="" method="get">
+            	<input type="email" class="email-inpt" placeholder="eony321v@gmail.com">
+                <input type="submit" class="submit-inpt" value="sign up"
+            </form>
+        </div>
+    </div>
+</div>

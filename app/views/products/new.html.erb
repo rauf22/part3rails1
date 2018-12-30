@@ -1,0 +1,9 @@
+<%= form_for @product, html: {multipart: true} do |f| %>
+  <p>Изображение: <br/><%= f.file_field :image %></p>
+	<p>Цена: <br/><%= f.text_field :price %></p>
+	<p>Название:<br/><%= f.text_field :title %></p>
+	<p>Описание:<br/><%= f.text_field :descption %></p>
+	
+
+	<p><%= f.submit "Создать товар"  %></p>
+<% end %>
