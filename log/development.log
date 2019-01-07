@@ -8802,3 +8802,564 @@ puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-01-06 10:39:04 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/rauf/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.1.1/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:51
+  Rendered products/index.html.erb within layouts/application (395.6ms)
+  Rendered shared/_header.html.erb (13.2ms)
+  Rendered shared/_footer.html.erb (1.1ms)
+Completed 200 OK in 707ms (Views: 693.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/unslider.css" for 127.0.0.1 at 2019-01-06 10:39:05 +0300
+Started GET "/unslider-min.js" for 127.0.0.1 at 2019-01-06 10:39:05 +0300
+Started GET "/unslider-dots.css" for 127.0.0.1 at 2019-01-06 10:39:05 +0300
+  
+  
+  
+ActionController::RoutingError (No route matches [GET] "/unslider.css"):
+ActionController::RoutingError (No route matches [GET] "/unslider-min.js"):
+ActionController::RoutingError (No route matches [GET] "/unslider-dots.css"):
+  
+  
+  
+actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/unslider-min.js" for 127.0.0.1 at 2019-01-06 10:39:06 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/unslider-min.js"):
+  
+actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-01-06 10:39:34 +0300
+Started GET "/users/auth/facebook" for 127.0.0.1 at 2019-01-06 10:39:35 +0300
+Started GET "/users/auth/facebook/callback?code=AQD84jWDzMHis7BZRH-umFApOIcyWlYTWSl7JqfXtvgjaP0aN4Niop-uYnU8OOAMLDWRL5U-4RrrAlVdm0UhhWlmYb6zZDMsnanp0F8ojRPn7HMmfXrODqp__eu8lN1QUzbjRgZ5ngbIR0mqUCWIOr90-9HCkHrfbgBptggWaYpdk7cyPovcilZ2QWEImfN6VE4GLRRw9aqbGYCHDnbUl1kbAlZo-NcNc2Ulvx25g4dlFaVweVes_R_VrRwYb_PYqDLUc_-Fts6yrbYUI3RiDVm7SXJGuLLxatRVtc7nsGakWvskPcrHe-MLvs7ozmLaoobO5YOULp-yhFbDaUBUjrn0&state=ff08e094aae7e581426fc61c2b248dcca01fdb6db0474816" for 127.0.0.1 at 2019-01-06 10:39:36 +0300
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQD84jWDzMHis7BZRH-umFApOIcyWlYTWSl7JqfXtvgjaP0aN4Niop-uYnU8OOAMLDWRL5U-4RrrAlVdm0UhhWlmYb6zZDMsnanp0F8ojRPn7HMmfXrODqp__eu8lN1QUzbjRgZ5ngbIR0mqUCWIOr90-9HCkHrfbgBptggWaYpdk7cyPovcilZ2QWEImfN6VE4GLRRw9aqbGYCHDnbUl1kbAlZo-NcNc2Ulvx25g4dlFaVweVes_R_VrRwYb_PYqDLUc_-Fts6yrbYUI3RiDVm7SXJGuLLxatRVtc7nsGakWvskPcrHe-MLvs7ozmLaoobO5YOULp-yhFbDaUBUjrn0", "state"=>"ff08e094aae7e581426fc61c2b248dcca01fdb6db0474816"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "2231156060280741"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:19
+Redirected to http://localhost:3000/
+Completed 302 Found in 31ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-06 10:39:37 +0300
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:51
+  Rendered products/index.html.erb within layouts/application (20.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/shared/_header.html.erb:6
+  Rendered shared/_header.html.erb (9.5ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 218ms (Views: 215.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/unslider-min.js" for 127.0.0.1 at 2019-01-06 10:39:37 +0300
+Started GET "/unslider.css" for 127.0.0.1 at 2019-01-06 10:39:37 +0300
+Started GET "/unslider-dots.css" for 127.0.0.1 at 2019-01-06 10:39:37 +0300
+  
+  
+  
+ActionController::RoutingError (No route matches [GET] "/unslider-min.js"):
+ActionController::RoutingError (No route matches [GET] "/unslider.css"):
+ActionController::RoutingError (No route matches [GET] "/unslider-dots.css"):
+  
+  
+  
+actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/unslider-min.js" for 127.0.0.1 at 2019-01-06 10:39:38 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/unslider-min.js"):
+  
+actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/admin" for 127.0.0.1 at 2019-01-06 10:40:26 +0300
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for 127.0.0.1 at 2019-01-06 10:40:26 +0300
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering /home/rauf/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.4.2/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/rauf/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.4.2/app/views/active_admin/devise/shared/_links.erb (1.6ms)
+  Rendered /home/rauf/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.4.2/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (44.6ms)
+Completed 200 OK in 350ms (Views: 319.8ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/admin/login" for 127.0.0.1 at 2019-01-06 10:40:32 +0300
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oRAGvTtrk6Ps3f4VRh1ydcHs54+67Y42+WLhwzT4IUPssM7fd8QAXckkSnlmz/VB1M8dKLsV/9+5PETYriwBWA==", "admin_user"=>{"email"=>"rafik2516@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mAdminUser Load (0.7ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."email" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["email", "rafik2516@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/rauf/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.1.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 258ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2019-01-06 10:40:32 +0300
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/rauf/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.1.1/lib/active_record/log_subscriber.rb:98
+  Rendering /home/rauf/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.4.2/app/views/active_admin/page/index.html.arb
+  Rendered /home/rauf/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.4.2/app/views/active_admin/page/index.html.arb (120.3ms)
+Completed 200 OK in 128ms (Views: 123.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/products" for 127.0.0.1 at 2019-01-06 10:40:40 +0300
+Processing by Admin::ProductsController#index as HTML
+  [1m[36mAdminUser Load (0.4ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/rauf/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.1.1/lib/active_record/log_subscriber.rb:98
+  Rendering /home/rauf/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.4.2/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "products" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/rauf/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.1.1/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "products" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/rauf/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.1.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "products"[0m
+  ↳ /home/rauf/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.1.1/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "products" LIMIT ? OFFSET ?) subquery_for_count[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/rauf/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.1.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" desc LIMIT ? OFFSET ?[0m  [["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/rauf/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.1.1/lib/active_record/log_subscriber.rb:98
+  Rendered /home/rauf/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.4.2/app/views/active_admin/resource/index.html.arb (275.0ms)
+Completed 200 OK in 288ms (Views: 280.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/comments" for 127.0.0.1 at 2019-01-06 10:40:57 +0300
+Processing by Admin::CommentsController#index as HTML
+  [1m[36mAdminUser Load (0.3ms)[0m  [1m[34mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ? ORDER BY "admin_users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/rauf/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.1.1/lib/active_record/log_subscriber.rb:98
+  Rendering /home/rauf/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.4.2/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "active_admin_comments" WHERE "active_admin_comments"."namespace" = ?[0m  [["namespace", "admin"]]
+  ↳ /home/rauf/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.1.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "active_admin_comments" WHERE "active_admin_comments"."namespace" = ? LIMIT ? OFFSET ?) subquery_for_count[0m  [["namespace", "admin"], ["LIMIT", 30], ["OFFSET", 0]]
+  ↳ /home/rauf/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.1.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT DISTINCT "active_admin_comments"."resource_type" FROM "active_admin_comments" ORDER BY resource_type asc[0m
+  ↳ /home/rauf/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.1.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT DISTINCT "active_admin_comments"."author_type" FROM "active_admin_comments" ORDER BY author_type asc[0m
+  ↳ /home/rauf/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.1.1/lib/active_record/log_subscriber.rb:98
+  Rendered /home/rauf/.rvm/gems/ruby-2.4.0/gems/activeadmin-1.4.2/app/views/active_admin/resource/index.html.arb (185.0ms)
+Completed 200 OK in 201ms (Views: 189.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-06 12:40:43 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/rauf/.rvm/gems/ruby-2.4.0/gems/activerecord-5.2.1.1/lib/active_record/log_subscriber.rb:98
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:51
+  Rendered products/index.html.erb within layouts/application (383.9ms)
+  Rendered shared/_header.html.erb (14.2ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 824ms (Views: 809.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/unslider.css" for 127.0.0.1 at 2019-01-06 12:40:44 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/unslider.css"):
+  
+actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/unslider-dots.css" for 127.0.0.1 at 2019-01-06 12:40:44 +0300
+Started GET "/unslider-min.js" for 127.0.0.1 at 2019-01-06 12:40:44 +0300
+  
+  
+ActionController::RoutingError (No route matches [GET] "/unslider-dots.css"):
+ActionController::RoutingError (No route matches [GET] "/unslider-min.js"):
+  
+  
+actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/unslider-min.js" for 127.0.0.1 at 2019-01-06 12:40:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/unslider-min.js"):
+  
+actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/products/3/add_to_cart" for 127.0.0.1 at 2019-01-06 12:41:35 +0300
+Processing by ProductsController#add_to_cart as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35m (22.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:14
+  [1m[36mCart Create (1.5ms)[0m  [1m[32mINSERT INTO "carts" ("status", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["status", "pending"], ["created_at", "2019-01-06 09:41:35.586370"], ["updated_at", "2019-01-06 09:41:35.586370"]]
+  ↳ app/controllers/products_controller.rb:14
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:14
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:19
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:20
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:20
+  [1m[36mCartship Create (0.5ms)[0m  [1m[32mINSERT INTO "cartships" ("cart_id", "product_id", "quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["cart_id", 3], ["product_id", 3], ["quantity", 1], ["created_at", "2019-01-06 09:41:35.627743"], ["updated_at", "2019-01-06 09:41:35.627743"]]
+  ↳ app/controllers/products_controller.rb:20
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:20
+Redirected to http://localhost:3000/carts/3
+Completed 302 Found in 123ms (ActiveRecord: 32.4ms)
+
+
+Started GET "/carts/3" for 127.0.0.1 at 2019-01-06 12:41:35 +0300
+Processing by CartsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCart Load (0.1ms)[0m  [1m[34mSELECT  "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/carts_controller.rb:3
+  Rendering carts/show.html.haml within layouts/application
+  [1m[36mCartship Load (0.3ms)[0m  [1m[34mSELECT "cartships".* FROM "cartships" WHERE "cartships"."cart_id" = ?[0m  [["cart_id", 3]]
+  ↳ app/views/carts/show.html.haml:7
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/carts/show.html.haml:9
+  Rendered carts/show.html.haml within layouts/application (16.9ms)
+  Rendered shared/_header.html.erb (5.6ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 179ms (Views: 174.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products/3/unslider-min.js" for 127.0.0.1 at 2019-01-06 12:41:35 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/products/3/unslider-min.js"):
+  
+actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
