@@ -58,11 +58,22 @@ html {
 	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
 }
 body {
+	position: relative;
 	color: #7e7f84;
 	text-align: left;
 	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
 	min-height:100%;
 	font-family: 'Roboto', sans-serif; /*font-family: 'Roboto Condensed', sans-serif;*/
+}
+.chat {
+	position: absolute;
+	top: 
+	5%;
+	right: 1%;
+	z-index: 1;
+	background-color: white;
+	border:2px solid #eee;
+
 }
 a, a:visited { /* порядок правил для ссылок имеет значение */
 	color: #f45a40;

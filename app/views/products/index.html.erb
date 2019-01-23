@@ -1,3 +1,18 @@
+
+<div class="chat" data-behavior="vue">
+    <% @users.each do |u| %>
+      <% if (u.image == nil) %>
+        <%= u.name %>
+      <% else %>
+        <%= image_tag(u.image) %><br />
+        <%= u.name %><hr>
+      <% end %>  
+
+    <% end %>
+  <app></app>  
+
+</div> 
+
 <div class="my-slider center-block-main">
 	<ul>
         <li>
