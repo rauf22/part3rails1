@@ -17,10 +17,10 @@ export default {
 
 <style scoped>
 .container {
-  pozition:relative;
+  position:relative;
 }
 p {
-  positon: absolute;
+  position: absolute;
   left: 500px;
   font-size: 20px;
   text-align: right;
